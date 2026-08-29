@@ -1,0 +1,35 @@
+{
+  "_note": "Illustrative demo data only. A real deployment would use a licensed source like DrugBank or First Databank matched by RxNorm code, not name substrings.",
+  "interactions": [
+    {
+      "drug_a": "warfarin",
+      "drug_b": "aspirin",
+      "severity": "high",
+      "description": "Increased bleeding risk when anticoagulants are combined with antiplatelet agents."
+    },
+    {
+      "drug_a": "lisinopril",
+      "drug_b": "spironolactone",
+      "severity": "moderate",
+      "description": "ACE inhibitors plus potassium-sparing diuretics can cause hyperkalemia."
+    },
+    {
+      "drug_a": "simvastatin",
+      "drug_b": "clarithromycin",
+      "severity": "high",
+      "description": "Certain macrolide antibiotics increase statin levels, raising myopathy risk."
+    },
+    {
+      "drug_a": "metformin",
+      "drug_b": "contrast",
+      "severity": "moderate",
+      "description": "Iodinated contrast media combined with metformin raises lactic acidosis risk in renal impairment."
+    },
+    {
+      "drug_a": "ibuprofen",
+      "drug_b": "lisinopril",
+      "severity": "moderate",
+      "description": "NSAIDs can reduce the effectiveness of ACE inhibitors and stress the kidneys."
+    }
+  ]
+}
