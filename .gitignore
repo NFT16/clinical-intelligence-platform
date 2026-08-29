@@ -8,7 +8,6 @@ __pycache__/
 
 .streamlit/secrets.toml
 
-*.db
 *.sqlite
 *.sqlite3
 

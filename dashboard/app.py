@@ -1,19 +1,16 @@
-"""
-Executive Dashboard — Streamlit.
-
-Run with:  streamlit run dashboard/app.py
-(needs the FastAPI backend running on localhost:8000 first)
-"""
-
 import requests
 import streamlit as st
 import pandas as pd
 
-API_BASE = "http://localhost:8000"
+try:
+    API_BASE = st.secrets.get("API_BASE", "http://localhost:8000")
+except Exception:
+    # No secrets.toml present at all (normal for local dev) — fall back cleanly.
+    API_BASE = "http://localhost:8000"
 
 st.set_page_config(page_title="Clinical Intelligence Platform", layout="wide")
-st.title("Clinical Intelligence Platform — Executive Dashboard")
-st.caption("AI-047 — synthetic data")
+st.title("Clinical Intelligence Platform")
+st.caption("AI-047")
 
 # ---- Patient selector ----
 try:
